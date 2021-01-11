@@ -200,7 +200,7 @@ const paths = [
     emoji: ":woman_student:",
     title: <Translation id="page-developers-learn" />,
     description: <Translation id="page-developers-learn-desc" />,
-    url: "/en/developers/docs/",
+    url: "/developers/docs/",
     button: <Translation id="page-developers-read-docs" />,
   },
   {
@@ -208,21 +208,21 @@ const paths = [
     title: <Translation id="page-developers-learn-tutorials" />,
 
     description: <Translation id="page-developers-learn-tutorials-desc" />,
-    url: "/en/developers/tutorials/",
+    url: "/developers/tutorials/",
     button: <Translation id="page-developers-learn-tutorials-cta" />,
   },
   {
     emoji: ":woman_scientist:",
     title: <Translation id="page-developers-start" />,
     description: <Translation id="page-developers-start-desc" />,
-    url: "/en/developers/learning-tools/",
+    url: "/developers/learning-tools/",
     button: <Translation id="page-developers-play-code" />,
   },
   {
     emoji: ":construction_worker:",
     title: <Translation id="page-developers-set-up" />,
     description: <Translation id="page-developers-setup-desc" />,
-    url: "/en/developers/local-environment/",
+    url: "/developers/local-environment/",
     button: <Translation id="page-developers-choose-stack" />,
   },
 ]
@@ -255,7 +255,7 @@ const DevelopersPage = ({ data }) => {
           </HeroCopyContainer>
           <Hero
             fluid={data.ednHero.childImageSharp.fluid}
-            alt={translateMessageId("common-alt-eth-blocks", intl)}
+            alt={translateMessageId("alt-eth-blocks", intl)}
             loading="eager"
           />
         </HeroContainer>
@@ -285,18 +285,13 @@ const DevelopersPage = ({ data }) => {
               <Translation id="page-developers-about-desc" />
             </SubtitleWithMargin>
             <p>
-              <Translation id="page-developers-about-desc-2" />{" "}
-              <Link to="https://developer.mozilla.org/en-US/">
-                <Translation id="page-developers-mozilla" />
-              </Link>
-              <Translation id="page-developers-about-desc-3" />
+              <Translation id="page-developers-about-desc-2" />
             </p>
             <p>
               <Translation id="page-developers-feedback" />{" "}
               <Link to="https://discord.gg/CetY6Y4">
                 <Translation id="page-developers-discord" />
               </Link>
-              .
             </p>
           </IntroColumn>
           <StyledCallout
@@ -306,7 +301,7 @@ const DevelopersPage = ({ data }) => {
               "page-developers-improve-ethereum-desc",
               intl
             )}
-            alt={translateMessageId("common-alt-eth-blocks", intl)}
+            alt={translateMessageId("alt-eth-blocks", intl)}
           >
             <div>
               <ButtonLink to="https://github.com/ethereum/ethereum-org-website">

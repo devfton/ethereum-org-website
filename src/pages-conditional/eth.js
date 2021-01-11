@@ -56,6 +56,10 @@ const SubtitleTwo = styled.div`
   color: ${(props) => props.theme.colors.text300};
 `
 
+const StyledEthPriceCard = styled(EthPriceCard)`
+  margin-bottom: 2rem;
+`
+
 const HeroContainer = styled.div`
   display: flex;
   justify-content: space-between;
@@ -247,7 +251,7 @@ const WhatIsEthereumPage = (props) => {
             <SubtitleTwo>
               <Translation id="page-eth-currency-for-apps" />
             </SubtitleTwo>
-            <EthPriceCard />
+            <StyledEthPriceCard />
             <ButtonLink to="/get-eth/" title="where to buy eth">
               Get ETH
             </ButtonLink>
@@ -318,14 +322,12 @@ const WhatIsEthereumPage = (props) => {
               <Link to="/developers/docs/consensus-mechanisms/pow/mining/">
                 <Translation id="page-eth-mining-link" />
               </Link>
-              .
             </p>
             <p>
               <Translation id="page-eth-fuels-staking" />{" "}
               <Link to="/eth2/staking/">
                 <Translation id="page-eth-fuels-more-staking" />
               </Link>
-              .
             </p>
           </div>
           <CentralActionCard
@@ -359,19 +361,33 @@ const WhatIsEthereumPage = (props) => {
             </p>
             <p>
               <Translation id="page-eth-uses-desc-2" />{" "}
-              <Link to="https://sablier.finance">
-                <Translation id="page-eth-stream-link" />
-              </Link>{" "}
-              <Translation id="page-eth-uses-desc-3" />{" "}
-              <Link to="/get-eth/#dex">
-                <Translation id="page-eth-trade-link-2" />
-              </Link>{" "}
-              <Translation id="page-eth-uses-desc-4" />{" "}
-              <Link to="https://app.compound.finance/">
-                <Translation id="page-eth-earn-interest-link" />
-              </Link>
-              .
             </p>
+            <ul>
+              <li>
+                <Link to="https://sablier.finance">
+                  <Translation id="page-eth-stream-link" />
+                </Link>{" "}
+                – <Translation id="page-eth-uses-desc-3" />
+              </li>
+              <li>
+                <Link to="/get-eth/#dex">
+                  <Translation id="page-eth-trade-link-2" />
+                </Link>{" "}
+                – <Translation id="page-eth-uses-desc-4" />
+              </li>
+              <li>
+                <Link to="https://app.compound.finance/">
+                  <Translation id="page-eth-earn-interest-link" />
+                </Link>{" "}
+                – <Translation id="page-eth-uses-desc-5" />
+              </li>
+              <li>
+                <Link to="/stablecoins/">
+                  <Translation id="page-eth-stablecoins-link" />
+                </Link>{" "}
+                – <Translation id="page-eth-uses-desc-6" />
+              </li>
+            </ul>
           </div>
           <Divider />
         </CentralColumn>

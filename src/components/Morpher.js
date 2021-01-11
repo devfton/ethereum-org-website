@@ -157,7 +157,7 @@ const Morpher = () => {
   }, [])
 
   return (
-    <NavLink to="/en/languages/">
+    <NavLink to="/languages/">
       <span>{state.text}</span>
     </NavLink>
   )
